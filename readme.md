@@ -1,21 +1,24 @@
 # Commands
 ```bash
-git init : Turns the working directory into a git repository
-git add <filename> : Add a specific file to the commit list
-git commit -m '<msg>' : Commit all added files with a message
-git -A : Add all files not on the gitignore list
+git init                                    # Turns the working directory into a git repository
+git add <fileName>                          # Add a specific file to the stage
+git add -A                                  # Add all files not on the gitignore list
+git commit -m '<msg>'                       # Commit all stages files with a message
 
-git status
-git log : Shows the log of recent commits
-git checkout -b <branchname> : Creates a new branch
-git checkout <branchname> : Switches branches
 
-git merge <branchname> : Merges the specified branch into current branch
+git status                                  # Hints what to do next / where you are at
+git log                                     # Shows the log of recent commits (q quits out of that view)
+git checkout -b <branchName>                # Creates a new branch
+git checkout <branchName>                   # Switches branches
 
-git remote add origin <url> : Sets up the remote repository as the default on the remote
-git remote -v : Shows the available branches on remote
-git push origin <branchname> : Pushes localname branch to the remotename repo
+git merge <branchName>                      # Merges the specified branch into current branch
 
-git tag -a '<versionNumber>' -m '<msg>' : Adds a tag to the current commit
-git push origin --tags : pushes tags to remote
+git remote add origin <url>                 # Sets up the remote repository as the default on the remote (Use HTTPS not SSH)
+git remote -v                               # Shows the available branches on remote
+git push origin <branchName>                # Pushes localname branch to the remotename repo
+
+git tag -a '<versionNumber>' -m '<msg>'     # Adds a tag to the current commit
+git push origin --tags                      # pushes tags to remote
+git pull origin <branchName>                # Fetches and merges remote branch to active branch
+git fetch origin <branchName>               # Gets the meta data about a branch to your local
 ```
