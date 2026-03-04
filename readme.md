@@ -15,4 +15,6 @@ git merge <branchname> : Merges the specified branch into current branch
 git remote add origin <url> : Sets up the remote repository as the default on the remote
 git remote -v : Shows the available branches on remote
 git push origin <branchname> : Pushes localname branch to the remotename repo
+
+git tag -a '<versionNumber>' -m '<msg>' : Adds a tag to the current commit
 ```
