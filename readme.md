@@ -9,3 +9,5 @@ git status
 git log : Shows the log of recent commits
 git checkout -b <branchname> : Creates a new branch
 git checkout <branchname> : Switches branches
+
+git merge <branchname> : Merges the specified branch into current branch
