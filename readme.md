@@ -17,4 +17,5 @@ git remote -v : Shows the available branches on remote
 git push origin <branchname> : Pushes localname branch to the remotename repo
 
 git tag -a '<versionNumber>' -m '<msg>' : Adds a tag to the current commit
+git push origin --tags : pushes tags to remote
 ```
